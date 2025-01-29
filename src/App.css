@@ -1,0 +1,355 @@
+@font-face {
+  font-family: "TT Commons Pro Expanded";
+  src: url("./police/Demo_Fonts/Fontspring-DEMO-tt_commons_pro_expanded_regular.otf") format("truetype");
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "TT Commons Pro Expanded", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  font-family: "TT Commons Pro Expanded", sans-serif;
+  padding-top: 40px;
+}
+
+#navbar {
+  display: flex; /* Utilisation de flexbox pour aligner les éléments */
+  justify-content: space-between; /* Espace entre logo, menu et bouton */
+  align-items: center; /* Aligne verticalement les éléments */
+  padding: 0 20px; /* Ajoute un espace horizontal au navbar */
+  font-family: "TT Commons Pro Expanded", sans-serif;
+}
+
+.logo {
+  padding-left: 40px;
+  margin-right: auto; /* Décale automatiquement le logo à gauche */
+}
+
+.logo img {
+  max-width: 100%; /* Rendre le logo responsive */
+  width: 100px; /* Taille fixe du logo */
+  height: auto; /* Conserve les proportions */
+  display: block; /* Évite les espaces autour de l'image */
+}
+
+
+#menu {
+  list-style: none; /* Supprime les puces des éléments de la liste */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Aligne les éléments du menu horizontalement */
+  gap: 30px; /* Ajoute un espacement entre les liens du menu */
+  font-family: "TT Commons Pro Expanded", sans-serif;
+}
+
+#menu li {
+  margin: 0;
+  font-family: "TT Commons Pro Expanded", sans-serif;
+}
+
+#menu a {
+  text-decoration: none; /* Supprime le soulignement */
+  color: white; /* Couleur des liens */
+  font-weight: bold; /* Texte en gras */
+  font-size: 15px; /* Taille de la police */
+  font-family: "TT Commons Pro Expanded", sans-serif;
+}
+
+.menu-button {
+  background-color: white; /* Couleur de fond du bouton */
+  color: black; /* Couleur du texte du bouton */
+  border: none; /* Supprime la bordure */
+  padding: 10px 20px; /* Taille et espacement du bouton */
+  font-size: 14px; /* Taille du texte du bouton */
+  cursor: pointer; /* Curseur au survol */
+  margin-left: auto; /* Décale le bouton à droite */
+  margin-right: 80px;
+}
+
+.menu-button:hover {
+  background-color: #000000; /* Couleur au survol */
+  color: #ffffff; /* Texte au survol */
+  border: 2px solid #ffffff; /* Ajoute un contour blanc au survol */
+}
+
+.titre-container {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  text-align: center; /* Centre le texte dans la div */
+  font-family: "TT Commons Pro Expanded", sans-serif;
+}
+
+.titre {
+  font-size: 30px; /* Taille du titre */
+  color: white; /* Couleur blanche pour le texte */
+  font-weight: bold; /* Texte en gras */
+  margin: 0; /* Supprime les marges par défaut */
+  font-family: "TT Commons Pro Expanded", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  text-align: center;
+  padding: 20px;
+  margin-top: 0; /* Pas de marge pour bien centrer */
+  flex-direction: column;
+  align-items: center; /* Centrer tous les éléments horizontalement */
+  padding: 0px 100px 20px 0px;
+  margin-left: 5.5%; /* Ajoute un espace en haut */
+}
+
+
+h1 {
+  font-size: 3rem; /* Taille du texte */
+  line-height: 1.5; /* Espace entre les lignes */
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+  padding-left: 200px;
+  margin-left: 200px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250vh;  /* Prendre toute la hauteur de la page */
+  margin-right: 125px;
+  padding-left: 80px;
+  margin-top: 100%;
+}
+
+.image {
+  max-width: 120%;  /* S'assure que l'image s'adapte à l'écran */
+  height: auto;     /* Maintient les proportions de l'image */
+}
+
+.text-image-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.section-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.section-button:hover {
+  background-color: #0056b3;
+}
+
+.image-content {
+  max-width: 45%;
+}
+
+.section-image {
+  width: 102%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-image-section2 {
+  display: flex;
+  flex-direction: row-reverse; /* Inverse l'ordre des éléments */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+
+.text-content2 {
+  max-width: 50%;
+}
+
+.section-title2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-text2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.section-button2 {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.section-button2:hover {
+  background-color: #0056b3;
+}
+
+.image-content2 {
+  max-width: 45%;
+}
+
+.section-image2 {
+  width: 102%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-image-section,.text-image-section2 {
+  margin-bottom: 10px; /* Espace entre les sections */
+}
+
+.text-image-section3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.text-content3 {
+  max-width: 50%;
+}
+
+.section-title3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-text3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.section-button3 {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.section-button3:hover {
+  background-color: #0056b3;
+}
+
+.image-content3 {
+  max-width: 45%;
+}
+
+.section-image3 {
+  width: 102%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "TT Commons Pro Expanded", sans-serif;
+  position: relative;
+  margin-top: 90%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ccc;
+}
+
+.copyright {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #777;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
